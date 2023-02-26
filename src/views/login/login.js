@@ -17,7 +17,7 @@ function LoginForm() {
    const res= await   dispatch(login({ email, password }));
     if(res.success){
       alert(res.message)
-      navigate('/')
+      navigate('/list')
     }else{
       alert(res.message)
 
@@ -59,7 +59,7 @@ function LoginForm() {
       <button type="submit" className="login_btn">
         Login
       </button>
-      <Link to="/signup">Signup</Link>
+      <Link to="/">Signup</Link>
     </form>
   );
 }
