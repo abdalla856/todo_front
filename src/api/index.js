@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const userUrl = "http://localhost:5000/api";
+const userUrl = "https://todo-back-r6os.onrender.com/api";
 
 export const signup = (user) =>
   axios.post(`${userUrl}/signup`, user, {
